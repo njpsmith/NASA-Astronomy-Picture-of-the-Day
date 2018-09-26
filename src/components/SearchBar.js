@@ -9,7 +9,6 @@ import styled from 'styled-components';
 const SearchBarWrapper = styled.div`
   margin-bottom: 20px;
 `
-
 const Button = styled.button`
   display: inline-block;
   position: relative;
@@ -32,7 +31,6 @@ const Button = styled.button`
 
 
 class SearchBar extends Component {
-
   state = {
     date: "",
     createdAt: moment(),
@@ -41,7 +39,8 @@ class SearchBar extends Component {
 
   onDateChange = (createdAt) => {
     if(createdAt) {
-      this.setState( () => ({createdAt}) );
+      console.log(createdAt);
+      this.setState(() => ({createdAt}));
       this.setState({ date: createdAt.format("YYYY-MM-DD") });
     }
   };

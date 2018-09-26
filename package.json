@@ -5,9 +5,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "dateformat": "^3.0.3",
+    "jest": "20.0.4",
+    "jest-cli": "20.0.4",
     "moment": "^2.22.2",
     "react": "^16.5.2",
     "react-addons-shallow-compare": "^15.6.2",
+    "react-addons-test-utils": "^15.6.2",
     "react-dates": "^18.1.0",
     "react-dom": "^16.5.2",
     "react-moment": "^0.7.9",
@@ -21,5 +24,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0"
   }
 }
